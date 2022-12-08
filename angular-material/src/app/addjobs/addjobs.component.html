@@ -1,0 +1,91 @@
+<!-- <p>addjobs works!</p> -->
+
+<div class="maindiv">
+    <div class="submaindiv">
+        <mat-card>
+            <mat-card-title>Share Job</mat-card-title>
+            <form class="was-validated" [formGroup]="addjobform" (ngSubmit)="onSubmitJob()">
+
+            <mat-card class="submatcard">
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Company Name</mat-label>
+                            <input  type="text" class="form-control" placeholder="company name" formControlName="jcname" required="" matInput>
+                          </mat-form-field>
+                    </div>
+            </mat-card>
+    
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Your Name</mat-label>
+                        <input  type="text" class="form-control" placeholder="your name" formControlName="jyname" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+    
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Job URL</mat-label>
+                        <input  type="text" class="form-control" placeholder="job url" formControlName="jurl" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+    
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Job ID</mat-label>
+                        <input  type="text" class="form-control" placeholder="job id" formControlName="jid" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+    
+    
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Title</mat-label>
+                        <input  type="text" class="form-control" placeholder="title" formControlName="jtitle" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Location</mat-label>
+                        <input  type="text" class="form-control" placeholder="location" formControlName="jlocation" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+    
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Description</mat-label>
+                        <input  type="text" class="form-control" placeholder="description" formControlName="jdescription" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+    
+            <!-- <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Company ID</mat-label>
+                        <input  type="text" class="form-control" placeholder="company id" formControlName="jcid" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card> -->
+    
+           
+           
+            <div class="jobsbtn">
+                <button mat-flat-button id="addjobsbtn" type="submit" [disabled]="addjobform.invalid"  disabled>Submit</button>
+            </div>
+            
+            </form>
+          </mat-card>
+    </div>
+</div>

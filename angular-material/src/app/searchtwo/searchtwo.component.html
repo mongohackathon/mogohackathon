@@ -1,0 +1,47 @@
+<!-- <p>searchtwo works!</p> -->
+<div class="main-content">
+   <div class="partone">
+     <h2  class="partonetext">
+       <!-- <span>Search jobs posted in your network</span> -->
+       <br>
+       <span style="font-size: 18px;">Powered by</span>
+       <br>
+       <span>MongoDB & Google Cloud Machine Learning</span>
+     </h2>
+ 
+     <div class="searchcarddiv">
+       <mat-card class="searchcard">
+               <mat-icon id="searchcardicon">search</mat-icon>
+               <input [(ngModel)]="value" (keyup)="Searchenterdata($event.key)" placeholder="search job" class="searchcardinput">
+               <button class="searchcardbtn" (click)="getSearch()">Search</button>
+       </mat-card>
+     </div>
+
+     <div class="jobmaindiv">
+       <div class="jobmainsubdiv">
+        <mat-card *ngFor="let nn of searchDataArrayTwo" id="matcard">
+          <mat-card-title class="matcardtitle">{{nn.job.title}}</mat-card-title>
+          <mat-card-subtitle id="matcardsubone">{{nn.job.addresses[0]}}</mat-card-subtitle>
+          <mat-card-subtitle class="matcardsubtwo">{{nn.job.companyDisplayName}}</mat-card-subtitle>
+          <mat-card-actions align="end" id="matcardactionbtn">
+            <!-- <button mat-button>VIEW JOB</button> -->
+            <button mat-button><a href="{{nn.job.applicationInfo.uris[0]}}" target="_blank">Apply</a></button>
+          </mat-card-actions>
+        </mat-card>
+       </div>
+     </div>
+ 
+   </div>
+   <!-- <div class="parttwo">
+       <mat-card *ngFor="let nn of searchDataArrayTwo" id="matcard">
+           <mat-card-title>{{nn.job.title}}</mat-card-title>
+           <mat-card-subtitle>{{nn.job.addresses[0]}}</mat-card-subtitle>
+           <mat-card-subtitle>{{nn.job.companyDisplayName}}</mat-card-subtitle>
+           <mat-card-actions align="end">
+             <button mat-button>VIEW JOB</button>
+             <button mat-button><a href="{{nn.job.applicationInfo.uris[0]}}" target="_blank">APPLY</a></button>
+           </mat-card-actions>
+         </mat-card>
+   </div> -->
+</div>
+ 

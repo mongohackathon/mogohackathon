@@ -1,0 +1,26 @@
+<!-- <app-material-table></app-material-table> -->
+<!-- <app-search></app-search> -->
+<mat-toolbar>
+    
+   <span class="websitelogo">Referrer</span><mat-icon>people</mat-icon>
+   <span class="example-spacer"></span>
+   <button mat-stroked-button class="navbtns" routerLink="/">Timeline</button>
+    <button mat-stroked-button class="navbtns"  routerLink="/search">Search</button>
+    <button mat-stroked-button class="navbtns"  routerLink="/addjobs">Add Jobs</button>
+    <button mat-stroked-button class="navbtns"  routerLink="/jobnotification">Get Notified About Jobs</button>
+    
+   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+     <mat-icon>favorite</mat-icon>
+   </button>
+   <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+ </mat-toolbar>
+
+<!-- <button routerLink="/search">Search</button>
+<button routerLink="/material-table">Material Table</button>
+<button routerLink="/search-two">Search Two</button>
+<button routerLink="/addjobs">Add Jobs</button>
+<button routerLink="/timeline">Timeline</button>
+<button routerLink="/timelinetwo">Timelinetwo</button> -->
+<router-outlet></router-outlet>

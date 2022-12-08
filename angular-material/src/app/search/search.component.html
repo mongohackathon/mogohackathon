@@ -1,0 +1,25 @@
+<p>search works!</p>
+<div class="header">
+    <div class="headerimg">
+        <img src="/assest/">
+        <div class="headersearch">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Find job now</mat-label>
+            <input matInput type="text" [(ngModel)]="value" (keyup)="Searchenterdata($event.key)">
+            </mat-form-field>
+            <button mat-flat-button color="primary" (click)="getSearch()">Search</button>
+        </div>
+    </div>
+</div>
+
+<div class="matcarddata">
+    <mat-card *ngFor="let nn of dataSource" id="matcard">
+        <mat-card-title>{{nn.title}}</mat-card-title>
+        <mat-card-subtitle>{{nn.completed}}</mat-card-subtitle>
+        <mat-card-actions align="end">
+          <button mat-button>VIEW JOB</button>
+          <button mat-button>APPLY</button>
+        </mat-card-actions>
+      </mat-card>
+      <br>
+</div>

@@ -1,0 +1,66 @@
+<div class="maindiv">
+    <div class="submaindiv">
+        <mat-card>
+            <mat-card-title>Get Notified About Jobs</mat-card-title>
+            <form class="was-validated" [formGroup]="notificationform" (ngSubmit)="onSubmitJob()">
+  
+            <mat-card class="submatcard">
+                    <div>
+                        <mat-form-field appearance="fill">
+                            <mat-label>Email</mat-label>
+                            <input  type="email" class="form-control" placeholder="email" formControlName="nemail" required="" matInput>
+                          </mat-form-field>
+                    </div>
+            </mat-card>
+   
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Status</mat-label>
+                        <select matNativeControl required formControlName="nstatus">
+                            <option value="Passively Looking">Passively Looking</option>
+                            <option value="Actively Looking">Actively Looking</option>
+                            <option value="Immediately Looking">Immediately Looking</option>
+                          </select>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+   
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Job Title</mat-label>
+                        <input  type="text" class="form-control" placeholder="job title" formControlName="njobtitle" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+   
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Company</mat-label>
+                        <input  type="text" class="form-control" placeholder="company" formControlName="ncompany" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+   
+   
+            <mat-card class="submatcard">
+                <div>
+                    <mat-form-field appearance="fill">
+                        <mat-label>Location</mat-label>
+                        <input  type="text" class="form-control" placeholder="location" formControlName="nlocation" required="" matInput>
+                      </mat-form-field>
+                </div>
+            </mat-card>
+  
+          
+            <div class="jobsbtn">
+                <button mat-stroked-button type="submit" [disabled]="notificationform.invalid"  disabled>Submit</button>
+            </div>
+           
+            </form>
+          </mat-card>
+    </div>
+ </div>
+ 

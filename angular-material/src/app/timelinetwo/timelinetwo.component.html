@@ -1,0 +1,33 @@
+<!-- <p>timeline works!</p> -->
+
+<div class="main-div">
+    <div>
+        <mat-card class="example-card maindiv-card" *ngFor="let nn of postedJob" >
+            <mat-card-header>
+              <!-- <div mat-card-avatar class="example-header-image"></div> -->
+              
+              <div class="headerpart">
+                <div>
+                    <img src="{{nn.jobs_by_poster.poster_avatar}}" alt="avtar" class="profileimg">
+                </div>
+                <div class="headerparttextdiv">
+                    <h3 class="headerpartname">{{nn._id}}</h3>
+                    <h5 class="headerpartposted">Posted a job</h5>
+                </div>
+              </div>
+                <!-- <mat-card-title>{{nn._id}}</mat-card-title>
+                <mat-card-subtitle>Posted a job</mat-card-subtitle> -->
+               
+            </mat-card-header>
+            <mat-card-content class="cardcontentdiv">
+                    <mat-card-title class="cardcontentdivtitle">{{nn.jobs_by_poster.job_title}}</mat-card-title>
+                    <mat-card-subtitle class="cardcontentdivsubone">{{nn.jobs_by_poster.company_name}}</mat-card-subtitle>
+                    <mat-card-subtitle class="cardcontentdivsubtwo">{{nn.jobs_by_poster.location}}</mat-card-subtitle>
+            </mat-card-content>
+            <mat-card-actions align="end">
+                <button mat-button></button>
+                <button mat-button><a href="{{nn.jobs_by_poster.job_application_url}}" target="_blank">Apply</a></button>
+              </mat-card-actions>
+          </mat-card>
+    </div>
+</div>

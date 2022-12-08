@@ -1,0 +1,100 @@
+.main-content{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+  
+ .partone{
+    width: 100%;
+    height: 50rem;
+    // background: red;
+ }
+  
+ .partonetext{
+    font-family: Raleway;
+    margin-top: -2rem;
+    align-items: center;
+    width: 100%;
+    height: 11rem;
+    /* margin: 10rem 0rem; */
+    /* font-style: italic; */
+    font-size: 30px;
+    line-height: 3rem;
+    font-weight: 600;
+ }
+  
+  
+ .parttwo{
+    width: 100%;
+    height: 50rem;
+    // background:green;
+ }
+  
+ .searchcarddiv{
+    margin: 0rem 8rem 2rem 8rem;
+    display: flex;
+    justify-content: center;
+ }
+  
+ .searchcard{
+    width: 20rem;
+    margin: 0rem 0rem;
+    border-radius: 15px;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px, rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+ }
+  
+ .searchcardinput{
+    border: none;
+    font-size: 20px;
+ }
+  
+ .searchcardinput:focus{
+    outline: none;
+ }
+  
+ #searchcardicon{
+    font-size: 20px;
+    margin-top: 6px;
+ }
+  
+ .searchcardbtn{
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    background: #19b919;
+    color: white;
+ }
+  
+ #matcard{
+    margin: 1rem 0rem;
+    width: 36rem;
+    // box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+ }
+
+ #matcardactionbtn{
+     display: flex;
+     justify-content: center;
+ }
+
+ .jobmaindiv{
+    display: flex;
+    justify-content: center;
+ }
+
+ .matcardsubtwo{
+    font-weight: 600;
+    font-size: 18px;
+ }
+
+ .matcardtitle{
+    padding: 1rem 0rem 0rem 0rem;
+ }
+
+ #matcardsubone{
+    margin-top: 10px;
+ }
